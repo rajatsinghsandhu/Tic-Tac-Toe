@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <main>
+      <div class="overlay"></div>
+      <div class="reload-overlay"></div>
+      <div class="starter-page">
+        <img src="images/logo.svg" class="main-logo" alt="Tic Tac Toe Logo" />
+        <div class="choose-x-or-o-container">
+          <div class="pick-player-1-header">Pick Player 1's mark</div>
+          <div class="x-or-o">
+            <div class="x"></div>
+            <div class="active"></div>
+            <div class="o"></div>
+          </div>
+          <div class="remember-note">REMEMBER : X GOES FIRST</div>
+        </div>
+        <div class="new-game-buttons">
+          <button class="new-game-cpu">NEW GAME (VS CPU)</button>
+          <button class="new-game-player">NEW GAME (VS PLAYER)</button>
+        </div>
+      </div>
+      <div class="main-game-page">
+        <div class="main-game-header">
+          <img
+            src="images/logo.svg"
+            class="main-logo-two"
+            alt="Tic Tac Toe Logo"
+          />
+          <div class="x-or-o-turn-container">
+            <div class="x-or-o-img"></div>
+            <div class="turn-text">TURN</div>
+          </div>
+          <button class="reload-btn"></button>
+        </div>
+        <div class="tic-tac-toe-grid">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="user-container">
+            <div class="user-text">X (YOU)</div>
+            <div class="user-wins">0</div>
+          </div>
+          <div class="tie-container">
+            <div class="tie-text">TIES</div>
+            <div class="ties">0</div>
+          </div>
+          <div class="opponent-container">
+            <div class="opponent-text">O (CPU)</div>
+            <div class="opponent-wins">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="win-container">
+        <div class="win-text">YOU WON!</div>
+        <div class="takes-the-round-text">
+          <span class="winner-logo"></span>TAKES THE ROUND
+        </div>
+        <div class="buttons">
+          <button class="quit-btn">QUIT</button>
+          <button class="next-round-btn">NEXT ROUND</button>
+        </div>
+      </div>
+      <div class="restart-game-container">
+        <div class="restart-game-text">RESTART GAME?</div>
+        <div class="buttons">
+          <button class="cancel-btn">NO, CANCEL</button>
+          <button class="restart-game-btn">YES, RESTART</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
